@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance App</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: green;
+    color: white;
+    border: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<h2>📋 Attendance</h2>
+
+<form action="/submit" method="post">
+
+<input type="text" name="name" placeholder="Student Name" required>
+
+<input type="text" name="roll" placeholder="Roll Number" required>
+
+<select name="homework">
+    <option value="Yes">Homework Done</option>
+    <option value="No">Homework Not Done</option>
+</select>
+
+<button type="submit">Mark Attendance</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
